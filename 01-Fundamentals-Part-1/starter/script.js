@@ -1,30 +1,20 @@
 // let js = "fun";
 // if (js === "fun") alert("Right");
 
-// 40 + 8 + 23 - 10
-// console.log(40 + 8 + 23 - 10)
-
-
+// 40 + 8 + 23 - 11
+// console.log(40 + 8 + 23 - 11)
 
 const country = "Russia";
 const continent = "Eurasia";
 let population = 143000000;
 // console.log(country, continent, population)
 
-
-
 // const isIsIsland = false;
-const language = 'Russian';
+const language = "Russian";
 // console.log(typeof isIsIsland, typeof language)
-
-
-
 
 // population = 130000000
 // console.log(population)
-
-
-
 
 // let half = population / 2;
 // population++;
@@ -33,9 +23,6 @@ const language = 'Russian';
 // console.log(33000000 > population);
 // let description = country + ' is in ' + continent + ', and its ' + population + ' people speak ' + language;
 // console.log(description)
-
-
-
 
 //Coding challenge #1
 // Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula: BMI = mass / height ** 2 = mass / (height * height). (mass in kg and height in meter).
@@ -73,14 +60,16 @@ const language = 'Russian';
 // markHigherBMI = bmiMark > bmiJohn;
 // console.log(markHigherBMI);
 
-
-
-
-let description = country + ' is in ' + continent + ', and its ' + population + ' people speak ' + language;
-description = `${country} is in ${continent}, and its ${population} people speak ${language}`
-console.log(description)
-
-
+let description =
+  country +
+  " is in " +
+  continent +
+  ", and its " +
+  population +
+  " people speak " +
+  language;
+description = `${country} is in ${continent}, and its ${population} people speak ${language}`;
+console.log(description);
 
 // Coding Challenge #2
 
@@ -174,9 +163,6 @@ GOOD LUCK 😀
 //     console.log(`Nobody WIN (${dolphins}, ${koalas}`)
 // }
 
-
-
-
 // Coding Challenge #4
 
 /*
@@ -194,5 +180,10 @@ GOOD LUCK 😀
 */
 
 const billValue = 430;
-const tip = billValue >= 50 && billValue <= 300 ? billValue * 0.15 : billValue * 0.2;
-console.log(`The bill was ${billValue}, the tip was ${tip}, and the total value ${tip + billValue}`);
+const tip =
+  billValue >= 50 && billValue <= 300 ? billValue * 0.15 : billValue * 0.2;
+console.log(
+  `The bill was ${billValue}, the tip was ${tip}, and the total value ${
+    tip + billValue
+  }`
+);
