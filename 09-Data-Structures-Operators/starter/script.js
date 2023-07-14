@@ -37,6 +37,13 @@ const restaurant = {
   }) {
     return `${this.starterMenu[startIndex]} , ${this.mainMenu[mainIndex]} , ${time} , ${address}`;
   },
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(ing1, ing2, ing3);
+  },
+  orderPizza: function (mainIngridient, ...otherIngridient) {
+    console.log(mainIngridient);
+    console.log(otherIngridient);
+  },
 };
 /////////////////////////////////////
 //!Destructuring arrays
@@ -104,4 +111,70 @@ const restaurant = {
 //     address: 'Sovetskaya',
 //   })
 // );
+///////////////////////////////////////////
+//!The Spread Operator (...)
+// const arr = [7, 8, 9];
+// const newArr = [...arr, 2, 4]; // [arr[0], arr[1], arr[2], 2, 4]
+// console.log(newArr);
+
+// //Copy array
+// const mainMenuCopy = [...restaurant.mainMenu];
+// console.log(mainMenuCopy);
+
+// //Join 2 arrays
+// const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
+// console.log(menu);
+
+// //... in Strings
+// const name = 'Marat';
+// const fullName = [...name, ' ', 'the', ' ', 'best'];
+// console.log(fullName);
+
+// //... in arguments
+// const ings = ['tomato', 'macaroni', 'cheese'];
+// restaurant.orderPasta(...ings);
+// restaurant.orderPasta(ings); //!Wrong
+
+// //... in Objects
+// const newRestaurant = { foundedIn: 1989, ...restaurant };
+// console.log(newRestaurant);
+// newRestaurant.categories.push('Noga');
+// console.log(newRestaurant);
+// console.log(restaurant);
+///////////////////////////////////////////
+//!Rest Pattern and Parameters
+// //1) With Destructive
+
+// //SPREAD это когда выражение стоит после =
+// const arr = [1, 2, ...[2, 3]];
+// console.log(arr);
+// //REST это когда выражение стоит до =
+// const [a, b, ...other] = arr;
+// console.log(a, b, other);
+
+// const [pizza, , risotto, ...otherFood] = [
+//   ...restaurant.mainMenu,
+//   ...restaurant.starterMenu,
+// ];
+// console.log(pizza, risotto, otherFood);
+
+// //Objects
+// const { sat, ...weekdays } = restaurant.openingHours;
+// console.log(weekdays);
+
+// //2) With functions
+// const add = function (...args) {
+//   let sum = 0;
+//   for (let i = 0; i < args.length; i++) sum += args[i];
+//   console.log(sum);
+// };
+
+// add(2, 3);
+// add(1, 2, 3, 4, 5);
+
+// const x = [1, 2, 3];
+// add(...x);
+
+// restaurant.orderPizza('mushroms', 'onion', 'ham', 'cheese');
+// restaurant.orderPizza('mushroms');
 ///////////////////////////////////////////
