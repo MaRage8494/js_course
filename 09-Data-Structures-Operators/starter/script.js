@@ -26,4 +26,82 @@ const restaurant = {
       close: 24,
     },
   },
+  order: function (start, main) {
+    return [this.starterMenu[start], this.mainMenu[main]];
+  },
+  orderDelivery: function ({
+    startIndex = 0,
+    mainIndex = 1,
+    time = '18:00',
+    address,
+  }) {
+    return `${this.starterMenu[startIndex]} , ${this.mainMenu[mainIndex]} , ${time} , ${address}`;
+  },
 };
+/////////////////////////////////////
+//!Destructuring arrays
+// const arr = [2, 5, 4];
+// const [x, y, z] = arr;
+// console.log(x, y, z);
+
+// //Destructuring values from object
+// let [main, , secondary] = restaurant.categories;
+// console.log(main, secondary);
+
+// //Exchange values
+// [main, secondary] = [secondary, main];
+// console.log(main, secondary);
+
+// //Receive 2 return values from a function
+// const [starter, mainMenu] = restaurant.order(0, 2);
+// console.log(starter, mainMenu);
+
+// //Nested destructuring
+// const nested = [2, 4, [5, 6]];
+// const [o, , j] = nested;
+// const [r, , [h, g]] = nested;
+// console.log(o, j);
+// console.log(r, h, g);
+
+// //Default values
+// const [p = 1, f = 2, b = 3] = [0, 6];
+// console.log(p, f, b);
+/////////////////////////////////////
+//!Destucturing Objects
+// const { name, starterMenu, mainMenu } = restaurant;
+// console.log(name, starterMenu, mainMenu);
+
+// //Rename values
+// const { name: restaurantName } = restaurant;
+// console.log(restaurantName);
+
+// //Default values
+// const {
+//   menu = [],
+//   temp = 'Erica the best❤',
+//   starterMenu: starters = [],
+// } = restaurant;
+// console.log(menu, temp, starters);
+
+// //Mutating variables
+// let a = 777;
+// let b = 333;
+// const obj = { a: 2, b: 4, c: 5 };
+// ({ a, b } = obj);
+// console.log(a, b);
+
+// //Nested objects
+// const {
+//   sat: { open: o = '9:00', close: c = '23:00' },
+// } = restaurant.openingHours;
+// console.log(o, c);
+
+// //Object like an argument
+// console.log(
+//   restaurant.orderDelivery({
+//     startIndex: 1,
+//     mainIndex: 2,
+//     address: 'Sovetskaya',
+//   })
+// );
+///////////////////////////////////////////

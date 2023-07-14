@@ -1,6 +1,6 @@
 # Behind the scenes
 
-I forgot that dont finish two lectures on this section 😊 Today i review my old notes about this course, my mind has cleared and i was ready to get new knowledges 😎
+[12.07.2023] I forgot that dont finish two lectures on this section 😊 Today i review my old notes about this course, my mind has cleared and i was ready to get new knowledges 😎
 
 ## Regular Functions vs Arrow Functions
 
