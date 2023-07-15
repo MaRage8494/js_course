@@ -45,7 +45,36 @@ const restaurant = {
     console.log(otherIngridient);
   },
 };
-/////////////////////////////////////
+//!Short Circuting (&& and ||)
+console.log('----OR----');
+console.log(3 || 'Marat');
+console.log('' || 'Marat');
+console.log(undefined || null);
+
+const guests = restaurant.numGuests || 10;
+console.log(guests);
+
+//Оператор && (AND)
+console.log('----AND----');
+console.log(0 && 'Jonas');
+console.log(7 && 'Jonas');
+console.log('Hello' && 'Jonas' && 23 && null && 7);
+
+restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach');
+///////////////////////////////////////////
+//!The Nullish Coalescing Operator (??)
+restaurant.numGuests = 0;
+const guestCorrect = restaurant.numGuests ?? 10;
+console.log(guestCorrect);
+///////////////////////////////////////////
+//!Logical Assigment Operators
+restaurant.numGuests ||= 10; //если значение falsy, то присвоится 10
+console.log(restaurant.numGuests);
+restaurant.numGuests &&= 20; //если значение не falsy, то присвоится 20, иначе ничего
+console.log(restaurant.numGuests);
+restaurant.numGuests ??= 30; //если значение 0, "" или какое то значение, то не меняет
+console.log(restaurant.numGuests);
+///////////////////////////////////////////
 //!Destructuring arrays
 // const arr = [2, 5, 4];
 // const [x, y, z] = arr;
@@ -73,7 +102,7 @@ const restaurant = {
 // //Default values
 // const [p = 1, f = 2, b = 3] = [0, 6];
 // console.log(p, f, b);
-/////////////////////////////////////
+///////////////////////////////////////////
 //!Destucturing Objects
 // const { name, starterMenu, mainMenu } = restaurant;
 // console.log(name, starterMenu, mainMenu);
