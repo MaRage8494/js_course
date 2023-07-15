@@ -21,3 +21,18 @@ Also this tool can join two and more arrays, copy array and to separate array fo
 
 It's second useful theme which simillar in syntax, but absolutely oppositely in his destination. Rest groups all other elements in array, string and etc. ✅
 I finally found very usefull thing: for the argument we can use rest parametr AND we get ubility to use in argument any quantity parameters. With rest we can for the sake of argument use arrays (with spread) and common variables 🏁
+
+## Short Circuting (&& AND ||)
+
+[15.07.2023] Today i met with new opetators, i will not use them in future because this operators get the code more heavy for read ☠
+
+Operator || - return first truthy argument ✅
+Operator && - return first falsy argument or last if all elements is true 🏁
+
+## The Nullish Coalescing Operator (??)
+
+Operator ?? - it's simmilar like a || operator but for him 0 and '' it's thuthy elements 🏁
+
+## Logical Assigment Operators
+
+It's well-known operators like '+=', but with use new operators ||, && and ?? 🏁
