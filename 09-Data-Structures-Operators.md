@@ -36,3 +36,7 @@ Operator ?? - it's simmilar like a || operator but for him 0 and '' it's thuthy 
 ## Logical Assigment Operators
 
 It's well-known operators like '+=', but with use new operators ||, && and ?? 🏁
+
+## Coding Challenge #1
+
+[18.07.2023] Today i spend all time for this challenge BUT i randomly does a coding challenge #4 😁 In future i will planed solve this again with new knowledges, but now you can see how i solve this how 🏁
