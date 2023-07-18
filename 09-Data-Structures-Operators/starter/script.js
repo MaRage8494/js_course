@@ -45,6 +45,78 @@ const restaurant = {
     console.log(otherIngridient);
   },
 };
+// Coding Challenge #4
+
+/* 
+Write a program that receives a list of variable names written in underscore_case and convert them to camelCase.
+
+The input will come from a textarea inserted into the DOM (see code below), and conversion will happen when the button is pressed.
+
+THIS TEST DATA (pasted to textarea)
+underscore_case
+ first_name
+Some_Variable 
+  calculate_AGE
+delayed_departure
+
+SHOULD PRODUCE THIS OUTPUT (5 separate console.log outputs)
+underscoreCase      ✅
+firstName           ✅✅
+someVariable        ✅✅✅
+calculateAge        ✅✅✅✅
+delayedDeparture    ✅✅✅✅✅
+
+HINT 1: Remember which character defines a new line in the textarea 😉
+HINT 2: The solution only needs to work for a variable made out of 2 words, like a_b
+HINT 3: Start without worrying about the ✅. Tackle that only after you have the variable name conversion working 😉
+HINT 4: This challenge is difficult on purpose, so start watching the solution in case you're stuck. Then pause and continue!
+
+Afterwards, test with your own test data!
+
+GOOD LUCK 😀
+*/
+const text = document.querySelector('.text');
+
+const removeUpperInStart = function (word) {
+  if (
+    [...word][0] !== undefined &&
+    [...word][0] === [...word][0].toUpperCase()
+  ) {
+    word = word.replace([...word][0], [...word][0].toLowerCase());
+    return word;
+  } else {
+    return word;
+  }
+};
+
+const removeUnderscoreAndMakeUpper = function (word) {
+  let indexUnderscore = [...word].indexOf('_');
+  if (indexUnderscore === -1) return word;
+
+  word = word.toLowerCase();
+
+  let subWord = word.slice(indexUnderscore + 1, word.length);
+  subWord = subWord.replace([...subWord][0], [...subWord][0].toUpperCase());
+  word = word.slice(0, indexUnderscore);
+
+  return word + subWord;
+};
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') {
+    let words = text.value.split('\n');
+    for (let i = 0; i < words.length; i++) {
+      words[i] = words[i].trim();
+      words[i] = removeUpperInStart(words[i]);
+      words[i] = removeUnderscoreAndMakeUpper(words[i]);
+      console.log(words[i]);
+    }
+    for (let j = 0; j < words.length; j++) {
+      j === 0 ? (text.value = words[j]) : (text.value += '\n' + words[j]);
+    }
+    text.value = text.value.trim();
+  }
+});
 ///////////////////////////////////////////
 //!Destructuring arrays
 // const arr = [2, 5, 4];
