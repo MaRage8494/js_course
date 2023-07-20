@@ -39,4 +39,14 @@ It's well-known operators like '+=', but with use new operators ||, && and ?? �
 
 ## Coding Challenge #1
 
-[18.07.2023] Today i spend all time for this challenge BUT i randomly does a coding challenge #4 😁 In future i will planed solve this again with new knowledges, but now you can see how i solve this how 🏁
+[18.07.2023] Today i spend all time for this challenge BUT i randomly does a coding challenge #4 😁 In future i will planed solve this again with new knowledges, but now you can see how i solve this how ✅
+
+[19.07.2023] Today i finally done the correct challenge😁🏁
+
+## Looping Arrays: The For-of Loop
+
+This loop very simillar with for each loop in other languages(Java, Python etc.) and so i end this lecture very fast 🏁
+
+## Enhanced Object Literals
+
+This lecture was about a new features that came from ES6 and nowadays. In general, this small lifehacks for your code, no more 😓 🏁
