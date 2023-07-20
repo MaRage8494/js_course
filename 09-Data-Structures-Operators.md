@@ -50,3 +50,17 @@ This loop very simillar with for each loop in other languages(Java, Python etc.)
 ## Enhanced Object Literals
 
 This lecture was about a new features that came from ES6 and nowadays. In general, this small lifehacks for your code, no more 😓 🏁
+
+## Optional Chaining (.?)
+
+[20.07.2023] With this feature we can check field, methods and arrays for exist, if doesnt exist return 'undefined' ✅
+
+For receive all useful functions we must use Nullish Coalescing Operator 😓 (??) 🏁
+
+## Looping Objects: Objects Keys, Values and Entries
+
+In this lecture i lerned how loop in Object keys, values or both together (entries). Using destructuring and For-of loop, we can use object on maximum 🏁
+
+## Coding Challenge #2
+
+This challenge was interested, but easy for me, no more comments 🏁
