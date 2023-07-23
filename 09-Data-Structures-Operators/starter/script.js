@@ -45,6 +45,84 @@ const restaurant = {
     console.log(otherIngridient);
   },
 };
+//!Sets
+const realSet = new Set([
+  'Pizza',
+  'Rissoto',
+  'Pizza',
+  'Sushi',
+  'Shaurma',
+  'Rissoto',
+]);
+console.log(realSet);
+
+console.log(realSet.size);
+
+console.log(realSet.has('Pizza'));
+console.log(realSet.has('Erica Loh'));
+
+realSet.add('Erica Loh');
+realSet.add('Erica Loh');
+console.log(realSet);
+
+realSet.delete('Pizza');
+console.log(realSet);
+
+// realSet.clear();
+// console.log(realSet);
+
+for (const food of realSet) console.log(food);
+
+const arraySet = [...realSet];
+console.log(arraySet);
+///////////////////////////////////////////
+//!Map: Fundamentals
+const realMap = new Map();
+
+realMap.set('Erica', 'Loh');
+console.log(realMap.set('Erica', 'Lapochka').set('Diashka', 'Cheburashka'));
+
+console.log(realMap.get('Erica'));
+
+realMap.delete('Diashka');
+console.log(realMap);
+
+console.log(realMap.has('Erica'));
+
+console.log(realMap.size);
+
+realMap.clear();
+console.log(realMap);
+///////////////////////////////////////////
+//!Maps: Iteration
+const question = new Map([
+  ['question', 'Who is better?'],
+  [1, 'Erica'],
+  [2, 'Alisa'],
+  [3, 'Katya'],
+  ['answer', 1],
+  [true, 'Ну конечно же, а как иначе???❤❤❤'],
+  [false, 'Ты еблан? Ебанный тюбик, обнови страницу и не позорься'],
+]);
+
+const answer = prompt(`${question.get('question')}
+1 - ${question.get(1)} 
+2 - ${question.get(2)}
+3 - ${question.get(3)}`);
+
+alert(question.get(Number(answer) === question.get('answer')));
+
+//Convert Object to Map
+const hoursMap = new Map(Object.entries(restaurant.openingHours));
+console.log(hoursMap);
+
+for (const [key, value] of question) console.log(key, value);
+
+//Convert Map to Array
+console.log(...question);
+console.log(...question.keys());
+console.log(...question.values());
+///////////////////////////////////////////
 //!Destructuring arrays
 // const arr = [2, 5, 4];
 // const [x, y, z] = arr;
