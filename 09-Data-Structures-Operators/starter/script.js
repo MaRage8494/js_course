@@ -45,83 +45,133 @@ const restaurant = {
     console.log(otherIngridient);
   },
 };
+///////////////////////////////////////////
 //!Sets
-const realSet = new Set([
-  'Pizza',
-  'Rissoto',
-  'Pizza',
-  'Sushi',
-  'Shaurma',
-  'Rissoto',
-]);
-console.log(realSet);
-
-console.log(realSet.size);
-
-console.log(realSet.has('Pizza'));
-console.log(realSet.has('Erica Loh'));
-
-realSet.add('Erica Loh');
-realSet.add('Erica Loh');
-console.log(realSet);
-
-realSet.delete('Pizza');
-console.log(realSet);
-
-// realSet.clear();
+// const realSet = new Set([
+//   'Pizza',
+//   'Rissoto',
+//   'Pizza',
+//   'Sushi',
+//   'Shaurma',
+//   'Rissoto',
+// ]);
 // console.log(realSet);
 
-for (const food of realSet) console.log(food);
+// console.log(realSet.size);
 
-const arraySet = [...realSet];
-console.log(arraySet);
+// console.log(realSet.has('Pizza'));
+// console.log(realSet.has('Erica Loh'));
+
+// realSet.add('Erica Loh');
+// realSet.add('Erica Loh');
+// console.log(realSet);
+
+// realSet.delete('Pizza');
+// console.log(realSet);
+
+// // realSet.clear();
+// // console.log(realSet);
+
+// for (const food of realSet) console.log(food);
+
+// const arraySet = [...realSet];
+// console.log(arraySet);
 ///////////////////////////////////////////
 //!Map: Fundamentals
-const realMap = new Map();
+// const realMap = new Map();
 
-realMap.set('Erica', 'Loh');
-console.log(realMap.set('Erica', 'Lapochka').set('Diashka', 'Cheburashka'));
+// realMap.set('Erica', 'Loh');
+// console.log(realMap.set('Erica', 'Lapochka').set('Diashka', 'Cheburashka'));
 
-console.log(realMap.get('Erica'));
+// console.log(realMap.get('Erica'));
 
-realMap.delete('Diashka');
-console.log(realMap);
+// realMap.delete('Diashka');
+// console.log(realMap);
 
-console.log(realMap.has('Erica'));
+// console.log(realMap.has('Erica'));
 
-console.log(realMap.size);
+// console.log(realMap.size);
 
-realMap.clear();
-console.log(realMap);
+// realMap.clear();
+// console.log(realMap);
 ///////////////////////////////////////////
 //!Maps: Iteration
-const question = new Map([
-  ['question', 'Who is better?'],
-  [1, 'Erica'],
-  [2, 'Alisa'],
-  [3, 'Katya'],
-  ['answer', 1],
-  [true, 'Ну конечно же, а как иначе???❤❤❤'],
-  [false, 'Ты еблан? Ебанный тюбик, обнови страницу и не позорься'],
-]);
+// const question = new Map([
+//   ['question', 'Who is better?'],
+//   [1, 'Erica'],
+//   [2, 'Alisa'],
+//   [3, 'Katya'],
+//   ['answer', 1],
+//   [true, 'Ну конечно же, а как иначе???❤❤❤'],
+//   [false, 'Ты еблан? Ебанный тюбик, обнови страницу и не позорься'],
+// ]);
 
-const answer = prompt(`${question.get('question')}
-1 - ${question.get(1)} 
-2 - ${question.get(2)}
-3 - ${question.get(3)}`);
+// const answer = prompt(`${question.get('question')}
+// 1 - ${question.get(1)}
+// 2 - ${question.get(2)}
+// 3 - ${question.get(3)}`);
 
-alert(question.get(Number(answer) === question.get('answer')));
+// alert(question.get(Number(answer) === question.get('answer')));
 
-//Convert Object to Map
-const hoursMap = new Map(Object.entries(restaurant.openingHours));
-console.log(hoursMap);
+// //Convert Object to Map
+// const hoursMap = new Map(Object.entries(restaurant.openingHours));
+// console.log(hoursMap);
 
-for (const [key, value] of question) console.log(key, value);
+// for (const [key, value] of question) console.log(key, value);
 
-//Convert Map to Array
-console.log(...question);
-console.log(...question.keys());
-console.log(...question.values());
+// //Convert Map to Array
+// console.log(...question);
+// console.log(...question.keys());
+// console.log(...question.values());
+//!Coding Challenge #3
+
+/* 
+Let's continue with our football betting app! This time, we have a map with a log of the events that happened during the game. The values are the events themselves, and the keys are the minutes in which each event happened (a football game has 90 minutes plus some extra time).
+
+1. Create an array 'events' of the different game events that happened (no duplicates)
+2. After the game has finished, is was found that the yellow card from minute 64 was unfair. So remove this event from the game events log.
+3. Print the following string to the console: "An event happened, on average, every 9 minutes" (keep in mind that a game has 90 minutes)
+4. Loop over the events and log them to the console, marking whether it's in the first half or second half (after 45 min) of the game, like this:
+      [FIRST HALF] 17: ⚽️ GOAL
+
+GOOD LUCK 😀
+*/
+// const gameEvents = new Map([
+//   [17, '⚽️ GOAL'],
+//   [36, '🔁 Substitution'],
+//   [47, '⚽️ GOAL'],
+//   [61, '🔁 Substitution'],
+//   [64, '🔶 Yellow card'],
+//   [69, '🔴 Red card'],
+//   [70, '🔁 Substitution'],
+//   [72, '🔁 Substitution'],
+//   [76, '⚽️ GOAL'],
+//   [80, '⚽️ GOAL'],
+//   [92, '🔶 Yellow card'],
+// ]);
+
+// //* 1 пункт
+// const events = new Set(gameEvents.values());
+// console.log(events);
+
+// //* 2 пункт
+// gameEvents.delete(64);
+// console.log(gameEvents);
+
+// //* 3 пункт
+// console.log(
+//   `An event happened, on average, every ${90 / gameEvents.size} minutes`
+// );
+
+// //* 4 пункт
+// for (const [minute, event] of gameEvents.entries()) {
+//   console.log(
+//     minute > 45
+//       ? `[SECOND HALF] ${minute}: ${event}`
+//       : `[FIRST HALF] ${minute}: ${event}`
+//   );
+// }
+///////////////////////////////////////////
 ///////////////////////////////////////////
 //!Destructuring arrays
 // const arr = [2, 5, 4];
