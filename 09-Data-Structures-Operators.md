@@ -64,3 +64,27 @@ In this lecture i lerned how loop in Object keys, values or both together (entri
 ## Coding Challenge #2
 
 This challenge was interested, but easy for me, no more comments 🏁
+
+## Sets
+
+[23.07.2023] In this lecture i learned what is _Sets_ and their's methods. Sets - it's array with unique elements 🏁
+
+## Maps: Fundamentals
+
+Maps - it's data structure with key/value type. Also i lerned new methods for Maps 🏁
+
+## Maps: Iteration
+
+I lerned how to use for (...of...) loop for Map iteration with separating on key/value 🏁
+
+## Summary: Which Data Structure to Use?
+
+This lecture was full of comparasion between _array_ and _set_, and _map_ and _object_. I understood all pros and cons and get ready to use them 🏁
+
+## Coding Challenge #3
+
+[24.07.2023] This was very easy challenge. Don't stop on him 🏁
+
+## Working With Strings - Part 1,2,3
+
+In this lectures i got more information about _Strings_ and their useful methods. I will planned use this knowledges for rewriting a Coding Challenge #4 tomorrow 🏁
