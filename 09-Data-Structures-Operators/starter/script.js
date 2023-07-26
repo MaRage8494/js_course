@@ -45,134 +45,6 @@ const restaurant = {
     console.log(otherIngridient);
   },
 };
-///////////////////////////////////////////
-//!Sets
-// const realSet = new Set([
-//   'Pizza',
-//   'Rissoto',
-//   'Pizza',
-//   'Sushi',
-//   'Shaurma',
-//   'Rissoto',
-// ]);
-// console.log(realSet);
-
-// console.log(realSet.size);
-
-// console.log(realSet.has('Pizza'));
-// console.log(realSet.has('Erica Loh'));
-
-// realSet.add('Erica Loh');
-// realSet.add('Erica Loh');
-// console.log(realSet);
-
-// realSet.delete('Pizza');
-// console.log(realSet);
-
-// // realSet.clear();
-// // console.log(realSet);
-
-// for (const food of realSet) console.log(food);
-
-// const arraySet = [...realSet];
-// console.log(arraySet);
-///////////////////////////////////////////
-//!Map: Fundamentals
-// const realMap = new Map();
-
-// realMap.set('Erica', 'Loh');
-// console.log(realMap.set('Erica', 'Lapochka').set('Diashka', 'Cheburashka'));
-
-// console.log(realMap.get('Erica'));
-
-// realMap.delete('Diashka');
-// console.log(realMap);
-
-// console.log(realMap.has('Erica'));
-
-// console.log(realMap.size);
-
-// realMap.clear();
-// console.log(realMap);
-///////////////////////////////////////////
-//!Maps: Iteration
-// const question = new Map([
-//   ['question', 'Who is better?'],
-//   [1, 'Erica'],
-//   [2, 'Alisa'],
-//   [3, 'Katya'],
-//   ['answer', 1],
-//   [true, 'Ну конечно же, а как иначе???❤❤❤'],
-//   [false, 'Ты еблан? Ебанный тюбик, обнови страницу и не позорься'],
-// ]);
-
-// const answer = prompt(`${question.get('question')}
-// 1 - ${question.get(1)}
-// 2 - ${question.get(2)}
-// 3 - ${question.get(3)}`);
-
-// alert(question.get(Number(answer) === question.get('answer')));
-
-// //Convert Object to Map
-// const hoursMap = new Map(Object.entries(restaurant.openingHours));
-// console.log(hoursMap);
-
-// for (const [key, value] of question) console.log(key, value);
-
-// //Convert Map to Array
-// console.log(...question);
-// console.log(...question.keys());
-// console.log(...question.values());
-//!Coding Challenge #3
-
-/* 
-Let's continue with our football betting app! This time, we have a map with a log of the events that happened during the game. The values are the events themselves, and the keys are the minutes in which each event happened (a football game has 90 minutes plus some extra time).
-
-1. Create an array 'events' of the different game events that happened (no duplicates)
-2. After the game has finished, is was found that the yellow card from minute 64 was unfair. So remove this event from the game events log.
-3. Print the following string to the console: "An event happened, on average, every 9 minutes" (keep in mind that a game has 90 minutes)
-4. Loop over the events and log them to the console, marking whether it's in the first half or second half (after 45 min) of the game, like this:
-      [FIRST HALF] 17: ⚽️ GOAL
-
-GOOD LUCK 😀
-*/
-// const gameEvents = new Map([
-//   [17, '⚽️ GOAL'],
-//   [36, '🔁 Substitution'],
-//   [47, '⚽️ GOAL'],
-//   [61, '🔁 Substitution'],
-//   [64, '🔶 Yellow card'],
-//   [69, '🔴 Red card'],
-//   [70, '🔁 Substitution'],
-//   [72, '🔁 Substitution'],
-//   [76, '⚽️ GOAL'],
-//   [80, '⚽️ GOAL'],
-//   [92, '🔶 Yellow card'],
-// ]);
-
-// //* 1 пункт
-// const events = new Set(gameEvents.values());
-// console.log(events);
-
-// //* 2 пункт
-// gameEvents.delete(64);
-// console.log(gameEvents);
-
-// //* 3 пункт
-// console.log(
-//   `An event happened, on average, every ${90 / gameEvents.size} minutes`
-// );
-
-// //* 4 пункт
-// for (const [minute, event] of gameEvents.entries()) {
-//   console.log(
-//     minute > 45
-//       ? `[SECOND HALF] ${minute}: ${event}`
-//       : `[FIRST HALF] ${minute}: ${event}`
-//   );
-// }
-///////////////////////////////////////////
-///////////////////////////////////////////
 //!Destructuring arrays
 // const arr = [2, 5, 4];
 // const [x, y, z] = arr;
@@ -685,3 +557,208 @@ GOOD LUCK 😀
 //       : `Odd of victory ${game[key]}: ${value}`
 //   );
 // }
+///////////////////////////////////////////
+//!Sets1
+// const realSet = new Set([
+//   'Pizza',
+//   'Rissoto',
+//   'Pizza',
+//   'Sushi',
+//   'Shaurma',
+//   'Rissoto',
+// ]);
+// console.log(realSet);
+
+// console.log(realSet.size);
+
+// console.log(realSet.has('Pizza'));
+// console.log(realSet.has('Erica Loh'));
+
+// realSet.add('Erica Loh');
+// realSet.add('Erica Loh');
+// console.log(realSet);
+
+// realSet.delete('Pizza');
+// console.log(realSet);
+
+// // realSet.clear();
+// // console.log(realSet);
+
+// for (const food of realSet) console.log(food);
+
+// const arraySet = [...realSet];
+// console.log(arraySet);
+///////////////////////////////////////////
+//!Map: Fundamentals
+// const realMap = new Map();
+
+// realMap.set('Erica', 'Loh');
+// console.log(realMap.set('Erica', 'Lapochka').set('Diashka', 'Cheburashka'));
+
+// console.log(realMap.get('Erica'));
+
+// realMap.delete('Diashka');
+// console.log(realMap);
+
+// console.log(realMap.has('Erica'));
+
+// console.log(realMap.size);
+
+// realMap.clear();
+// console.log(realMap);
+///////////////////////////////////////////
+//!Maps: Iteration
+// const question = new Map([
+//   ['question', 'Who is better?'],
+//   [1, 'Erica'],
+//   [2, 'Alisa'],
+//   [3, 'Katya'],
+//   ['answer', 1],
+//   [true, 'Ну конечно же, а как иначе???❤❤❤'],
+//   [false, 'Ты еблан? Ебанный тюбик, обнови страницу и не позорься'],
+// ]);
+
+// const answer = prompt(`${question.get('question')}
+// 1 - ${question.get(1)}
+// 2 - ${question.get(2)}
+// 3 - ${question.get(3)}`);
+
+// alert(question.get(Number(answer) === question.get('answer')));
+
+// //Convert Object to Map
+// const hoursMap = new Map(Object.entries(restaurant.openingHours));
+// console.log(hoursMap);
+
+// for (const [key, value] of question) console.log(key, value);
+
+// //Convert Map to Array
+// console.log(...question);
+// console.log(...question.keys());
+// console.log(...question.values());
+//!Coding Challenge #3
+
+/* 
+Let's continue with our football betting app! This time, we have a map with a log of the events that happened during the game. The values are the events themselves, and the keys are the minutes in which each event happened (a football game has 90 minutes plus some extra time).
+
+1. Create an array 'events' of the different game events that happened (no duplicates)
+2. After the game has finished, is was found that the yellow card from minute 64 was unfair. So remove this event from the game events log.
+3. Print the following string to the console: "An event happened, on average, every 9 minutes" (keep in mind that a game has 90 minutes)
+4. Loop over the events and log them to the console, marking whether it's in the first half or second half (after 45 min) of the game, like this:
+      [FIRST HALF] 17: ⚽️ GOAL
+
+GOOD LUCK 😀
+*/
+// const gameEvents = new Map([
+//   [17, '⚽️ GOAL'],
+//   [36, '🔁 Substitution'],
+//   [47, '⚽️ GOAL'],
+//   [61, '🔁 Substitution'],
+//   [64, '🔶 Yellow card'],
+//   [69, '🔴 Red card'],
+//   [70, '🔁 Substitution'],
+//   [72, '🔁 Substitution'],
+//   [76, '⚽️ GOAL'],
+//   [80, '⚽️ GOAL'],
+//   [92, '🔶 Yellow card'],
+// ]);
+
+// //* 1 пункт
+// const events = new Set(gameEvents.values());
+// console.log(events);
+
+// //* 2 пункт
+// gameEvents.delete(64);
+// console.log(gameEvents);
+
+// //* 3 пункт
+// console.log(
+//   `An event happened, on average, every ${90 / gameEvents.size} minutes`
+// );
+
+// //* 4 пункт
+// for (const [minute, event] of gameEvents.entries()) {
+//   console.log(
+//     minute > 45
+//       ? `[SECOND HALF] ${minute}: ${event}`
+//       : `[FIRST HALF] ${minute}: ${event}`
+//   );
+// }
+///////////////////////////////////////////
+// Coding Challenge #4
+
+/* 
+Write a program that receives a list of variable names written in underscore_case and convert them to camelCase.
+
+The input will come from a textarea inserted into the DOM (see code below), and conversion will happen when the button is pressed.
+
+THIS TEST DATA (pasted to textarea)
+underscore_case
+ first_name
+Some_Variable 
+  calculate_AGE
+delayed_departure
+
+SHOULD PRODUCE THIS OUTPUT (5 separate console.log outputs)
+underscoreCase      ✅
+firstName           ✅✅
+someVariable        ✅✅✅
+calculateAge        ✅✅✅✅
+delayedDeparture    ✅✅✅✅✅
+
+HINT 1: Remember which character defines a new line in the textarea 😉
+HINT 2: The solution only needs to work for a variable made out of 2 words, like a_b
+HINT 3: Start without worrying about the ✅. Tackle that only after you have the variable name conversion working 😉
+HINT 4: This challenge is difficult on purpose, so start watching the solution in case you're stuck. Then pause and continue!
+
+Afterwards, test with your own test data!
+
+GOOD LUCK 😀
+*/
+// document.body.append(document.createElement('textarea'));
+// document.body.append(document.createElement('button'));
+
+// const mainButton = document.querySelector('button');
+
+// mainButton.addEventListener('click', function () {
+//   let text = document.querySelector('textarea');
+//   let words = text.value.toLowerCase().split('\n');
+
+//   for (let [i, word] of words.entries()) {
+//     word = word.trim().split('_');
+//     for (let j = 0; j < word.length; j++) {
+//       word[j] = j > 0 ? word[j][0].toUpperCase() + word[j].slice(1) : word[j];
+//     }
+//     word = word.join('').padEnd(20, ' ') + '✅'.repeat(i + 1);
+//     i === 0 ? (text.value = word + '\n') : (text.value += word + '\n');
+//   }
+//   text.value = text.value.trim();
+// });
+///////////////////////////////////////////
+//!Working With Strings - Part 1, 2, 3
+// const firstName = 'Marat';
+
+// console.log(firstName[0]); //M
+
+// console.log(firstName.length); //5
+
+// console.log(firstName.indexOf('a')); //1
+// console.log(firstName.lastIndexOf('a')); //3
+
+// console.log(firstName.slice(1)); //arat
+// console.log(firstName.slice(1, 4)); //ara
+// console.log(firstName.slice(-2)); //ar
+
+// console.log(firstName.toLowerCase()); //marat
+// console.log(firstName.toUpperCase()); //MARAT
+
+// const dirtyName = '  mARaT  \n';
+// console.log(dirtyName.trim().toLowerCase()); //marat
+
+// console.log(firstName.replace('a', 'u')); //Murat
+// console.log(firstName.replace(/a/g, 'u')); //Murut
+
+// console.log(firstName.includes('ara')); //true
+
+// console.log(firstName.startsWith('M')); //true
+// console.log(firstName.endsWith('d')); //false
+///////////////////////////////////////////
