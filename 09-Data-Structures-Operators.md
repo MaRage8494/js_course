@@ -88,3 +88,11 @@ This lecture was full of comparasion between _array_ and _set_, and _map_ and _o
 ## Working With Strings - Part 1,2,3
 
 In this lectures i got more information about _Strings_ and their useful methods. I will planned use this knowledges for rewriting a Coding Challenge #4 tomorrow 🏁
+
+## Coding Challenge #4
+
+[25.07.2023] Oh, it's was easy not like in past 😁 I upgrade this programm and now it's work with unlimited words 🏁
+
+## Conclusion
+
+Эта секция была полна структур данных и всё про них. В общем то, я обо всех них знал с ВУЗа или просто попадались в работе 😁. Поэтому я бы не сказал, что что то кардинально новое узнал, но узнал общий синтаксис и их, ну и самое главное, что открыл для себя это Spread и Rest операторы, Боже, как же мне их не хватало 😢.
