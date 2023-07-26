@@ -83,7 +83,7 @@ This lecture was full of comparasion between _array_ and _set_, and _map_ and _o
 
 ## Coding Challenge #3
 
-[24.07.2023] This was very easy challenge. Don't stop on him 🏁
+[24.07.2023] This was very easy challenge. Don't stop оn him 🏁
 
 ## Working With Strings - Part 1,2,3
 
