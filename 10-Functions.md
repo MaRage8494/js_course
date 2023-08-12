@@ -23,3 +23,12 @@ It's very weird, but i think it's usefull (i hope😁) 🏁
 ## The call and aplly Methods
 
 Oh, this very useful methods, but i will use only ✨*call*✨ 🏁
+
+## The bind Method
+
+[13.08.2023] Happy birthday to me 🥳 Time for continue my work.
+How i understood the bind method better than call or apply methods. This methods allow create a new function based on previous functions and we can set deffault parameters in this function 🏁
+
+## Coding Challenge #1
+
+Not hard challenge, but i can't understood what i must be done. When i look in walkthrought i understood and done it fast🏁
