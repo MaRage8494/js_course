@@ -32,3 +32,15 @@ How i understood the bind method better than call or apply methods. This methods
 ## Coding Challenge #1
 
 Not hard challenge, but i can't understood what i must be done. When i look in walkthrought i understood and done it fast🏁
+
+## Closures
+
+[14.08.2023] Today i learn very useful thing, it's _closures_!!! I know this theme very popular in job interview🔥 I understood closures very fast, for me it's common thing 🏁
+
+## Coding Challenge #2
+
+Oh, it's easiest coding challenge ever 🏁
+
+## Conclusion
+
+Это секция была быстрой, но очень полезной. Хотелось бы по-больше челленджей или проектов, а то одна теория как то не оч😢
