@@ -15,7 +15,7 @@
 - 07 JavaScript in the Browser\_ DOM and Events Fundamentals ✅
 - 08 How JavaScript Works Behind the Scenes ✅ [12.07.2023]
 - 09 Data Structures, Modern Operators and Strings ✅ [25.07.2023]
-- 10 A Closer Look at Functions ❌
+- 10 A Closer Look at Functions ✅ [14.08.2023]
 - 11 Working With Arrays ❌
 - 12 Numbers, Dates, Intl and Timers ❌
 - 13 Advanced DOM and Events ❌
