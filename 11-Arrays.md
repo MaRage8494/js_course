@@ -16,4 +16,4 @@ It's simple repeat map, filter and reduce methods not more :( 🏁
 
 ## Final
 
-[23.02.2024] Due to the inflammation of ligaments and the piling up of things to do at university and work, I was not able to maintain git, but I'm happy to say that I have completed this section 🎉🎉🎉
+[23.02.2024] Due to the inflammation of ligaments and the piling up of things to do at university and work, I was not able to maintain git😥, but I'm happy to say that I have completed this section 🎉🎉🎉
