@@ -16,7 +16,7 @@
 - 08 How JavaScript Works Behind the Scenes ✅ [12.07.2023]
 - 09 Data Structures, Modern Operators and Strings ✅ [25.07.2023]
 - 10 A Closer Look at Functions ✅ [14.08.2023]
-- 11 Working With Arrays ❌
+- 11 Working With Arrays ✅ [23.02.2024]
 - 12 Numbers, Dates, Intl and Timers ❌
 - 13 Advanced DOM and Events ❌
 - 14 Object-Oriented Programming (OOP) With JavaScript ❌
